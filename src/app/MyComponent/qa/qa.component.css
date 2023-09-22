@@ -1,0 +1,53 @@
+/* Styling for the container */
+div.qa-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Styling for individual question-answer items */
+div.qa-item {
+  width: calc(50% - 20px); /* Adjust the width as needed for your layout */
+  padding: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect */
+div.qa-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for questions */
+p.question {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Styling for answers */
+p.answer {
+  color: #555;
+}
+
+/* Add visually appealing colors */
+div.qa-item:nth-child(odd) {
+  background-color: #eaf4fc; /* Light blue for odd items */
+}
+
+div.qa-item:nth-child(even) {
+  background-color: #fde5e5; /* Light red for even items */
+}
+
+p.question {
+  color: #1a73e8; /* Blue for questions */
+}
+
+p.answer {
+  color: #2e7d32; /* Green for answers */
+}

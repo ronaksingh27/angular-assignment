@@ -1,0 +1,16 @@
+<div>
+    <div *ngFor="let qa of values" class="qa-item">
+      <p class="question">{{ qa.question }}</p>
+      
+      <p class="answer">{{ qa.answer }}</p>
+
+      <ng-container *ngIf="qa.imagePath">
+        <img [src]="qa.imagePath" alt="3-tier architecture diagram" />
+      </ng-container>
+    </div>
+  </div>
+
+  
+  
+  
+  
